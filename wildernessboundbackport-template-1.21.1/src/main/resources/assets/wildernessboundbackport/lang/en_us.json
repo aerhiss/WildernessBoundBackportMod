@@ -1,0 +1,13 @@
+{
+  "itemGroup.wildernessboundbackport": "Example Mod Tab",
+  "block.wildernessboundbackport.example_block": "Example Block",
+  "item.wildernessboundbackport.example_item": "Example Item",
+
+  "wildernessboundbackport.configuration.title": "Wilderness Bound Backport Configs",
+  "wildernessboundbackport.configuration.section.wildernessboundbackport.common.toml": "Wilderness Bound Backport Configs",
+  "wildernessboundbackport.configuration.section.wildernessboundbackport.common.toml.title": "Wilderness Bound Backport Configs",
+  "wildernessboundbackport.configuration.items": "Item List",
+  "wildernessboundbackport.configuration.logDirtBlock": "Log Dirt Block",
+  "wildernessboundbackport.configuration.magicNumberIntroduction": "Magic Number Text",
+  "wildernessboundbackport.configuration.magicNumber": "Magic Number"
+}
