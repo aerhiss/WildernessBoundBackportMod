@@ -37,6 +37,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
             addMult(ModTags.Items.WOOL_STAIRS,block.getStair().get().asItem());
         }
 
+        for (SlabAndStairs block : ModBlocks.CONCRETESLABSANDSTAIRS){
+            addMult(ItemTags.SLABS,block.getSlab().get().asItem());
+            addMult(ItemTags.STAIRS,block.getStair().get().asItem());
+            addMult(ModTags.Items.CONCRETE,block.getSlab().get().asItem());
+            addMult(ModTags.Items.CONCRETE,block.getStair().get().asItem());
+            addMult(ModTags.Items.CONCRETE_SLABS,block.getSlab().get().asItem());
+            addMult(ModTags.Items.CONCRETE_STAIRS,block.getStair().get().asItem());
+        }
+
     }
 
     public void addMult(TagKey<Item> tag, Item item) {

@@ -22,6 +22,8 @@ public class ModBlocks {
 
 
     public static final List<SlabAndStairs> WOOLSLABSANDSTAIRS = new ArrayList<>();
+    public static final List<SlabAndStairs> CONCRETESLABSANDSTAIRS = new ArrayList<>();
+    public static final List<SlabAndStairs> ALLSLABANDSTAIRS = new ArrayList<>();
 
     public static final SlabAndStairs WHITE_WOOL = registerWoolSlabAndStair("white_wool", Blocks.WHITE_WOOL);
     public static final SlabAndStairs LIGHT_GRAY_WOOL = registerWoolSlabAndStair("light_gray_wool", Blocks.LIGHT_GRAY_WOOL);
@@ -40,9 +42,34 @@ public class ModBlocks {
     public static final SlabAndStairs MAGENTA_WOOL = registerWoolSlabAndStair("magenta_wool", Blocks.MAGENTA_WOOL);
     public static final SlabAndStairs PINK_WOOL = registerWoolSlabAndStair("pink_wool", Blocks.PINK_WOOL);
 
+    public static final SlabAndStairs WHITE_CONCRETE = registerSlabAndStair("white_concrete", Blocks.WHITE_CONCRETE);
+    public static final SlabAndStairs LIGHT_GRAY_CONCRETE = registerSlabAndStair("light_gray_concrete", Blocks.LIGHT_GRAY_CONCRETE);
+    public static final SlabAndStairs GRAY_CONCRETE = registerSlabAndStair("gray_concrete", Blocks.GRAY_CONCRETE);
+    public static final SlabAndStairs BLACK_CONCRETE = registerSlabAndStair("black_concrete", Blocks.BLACK_CONCRETE);
+    public static final SlabAndStairs BROWN_CONCRETE = registerSlabAndStair("brown_concrete", Blocks.BROWN_CONCRETE);
+    public static final SlabAndStairs RED_CONCRETE = registerSlabAndStair("red_concrete", Blocks.RED_CONCRETE);
+    public static final SlabAndStairs ORANGE_CONCRETE = registerSlabAndStair("orange_concrete", Blocks.ORANGE_CONCRETE);
+    public static final SlabAndStairs YELLOW_CONCRETE = registerSlabAndStair("yellow_concrete", Blocks.YELLOW_CONCRETE);
+    public static final SlabAndStairs LIME_CONCRETE = registerSlabAndStair("lime_concrete", Blocks.LIME_CONCRETE);
+    public static final SlabAndStairs GREEN_CONCRETE = registerSlabAndStair("green_concrete", Blocks.GREEN_CONCRETE);
+    public static final SlabAndStairs CYAN_CONCRETE = registerSlabAndStair("cyan_concrete", Blocks.CYAN_CONCRETE);
+    public static final SlabAndStairs LIGHT_BLUE_CONCRETE = registerSlabAndStair("light_blue_concrete", Blocks.LIGHT_BLUE_CONCRETE);
+    public static final SlabAndStairs BLUE_CONCRETE = registerSlabAndStair("blue_concrete", Blocks.BLUE_CONCRETE);
+    public static final SlabAndStairs PURPLE_CONCRETE = registerSlabAndStair("purple_concrete", Blocks.PURPLE_CONCRETE);
+    public static final SlabAndStairs MAGENTA_CONCRETE = registerSlabAndStair("magenta_concrete", Blocks.MAGENTA_CONCRETE);
+    public static final SlabAndStairs PINK_CONCRETE = registerSlabAndStair("pink_concrete", Blocks.PINK_CONCRETE);
+
     public static SlabAndStairs registerWoolSlabAndStair(String name, Block blockType) {
         SlabAndStairs reg = new FlammableSlabAndStairs(name, blockType);
         WOOLSLABSANDSTAIRS.add(reg);
+        ALLSLABANDSTAIRS.add(reg);
+        return reg;
+    }
+
+    public static SlabAndStairs registerSlabAndStair(String name, Block blockType) {
+        SlabAndStairs reg = new SlabAndStairs(name, blockType);
+        CONCRETESLABSANDSTAIRS.add(reg);
+        ALLSLABANDSTAIRS.add(reg);
         return reg;
     }
 

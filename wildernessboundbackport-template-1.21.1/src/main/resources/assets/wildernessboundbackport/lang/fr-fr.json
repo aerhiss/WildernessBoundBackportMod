@@ -1,5 +1,13 @@
 {
   "creativetab.wildernessboundbackport.wool_stairs_and_slabs": "Escaliers et dalles de laine",
+  "creativetab.wildernessboundbackport.concrete_stairs_and_slabs": "Escaliers et dalles de béton",
+
+
+  "tag.wildernessboundbackport.concrete": "Béton",
+  "tag.wildernessboundbackport.concrete_slabs": "Dalles de béton",
+  "tag.wildernessboundbackport.concrete_stairs": "Escalier en béton",
+  "tag.wildernessboundbackport.wool_slabs": "Dalles de laine",
+  "tag.wildernessboundbackport.wool_stairs": "Escalier en laine",
 
   "block.wildernessboundbackport.white_wool_slab": "Dalle de laine blanche",
   "block.wildernessboundbackport.white_wool_stairs": "Escalier en laine blanche",
@@ -47,5 +55,54 @@
   "block.wildernessboundbackport.magenta_wool_stairs": "Escalier en laine magenta",
 
   "block.wildernessboundbackport.pink_wool_slab": "Dalle de laine rose",
-  "block.wildernessboundbackport.pink_wool_stairs": "Escalier en laine rose"
+  "block.wildernessboundbackport.pink_wool_stairs": "Escalier en laine rose",
+
+
+  "block.wildernessboundbackport.white_concrete_slab": "Dalle de béton blanche",
+  "block.wildernessboundbackport.white_concrete_stairs": "Escalier en béton blanche",
+
+  "block.wildernessboundbackport.light_gray_concrete_slab": "Dalle de béton gris clair",
+  "block.wildernessboundbackport.light_gray_concrete_stairs": "Escalier en béton gris clair",
+
+  "block.wildernessboundbackport.gray_concrete_slab": "Dalle de béton grise",
+  "block.wildernessboundbackport.gray_concrete_stairs": "Escalier en béton grise",
+
+  "block.wildernessboundbackport.black_concrete_slab": "Dalle de béton noire",
+  "block.wildernessboundbackport.black_concrete_stairs": "Escalier en béton noire",
+
+  "block.wildernessboundbackport.brown_concrete_slab": "Dalle de béton marron",
+  "block.wildernessboundbackport.brown_concrete_stairs": "Escalier en béton marron",
+
+  "block.wildernessboundbackport.red_concrete_slab": "Dalle de béton rouge",
+  "block.wildernessboundbackport.red_concrete_stairs": "Escalier en béton rouge",
+
+  "block.wildernessboundbackport.orange_concrete_slab": "Dalle de béton orange",
+  "block.wildernessboundbackport.orange_concrete_stairs": "Escalier en béton orange",
+
+  "block.wildernessboundbackport.yellow_concrete_slab": "Dalle de béton jaune",
+  "block.wildernessboundbackport.yellow_concrete_stairs": "Escalier ne béton jaune",
+
+  "block.wildernessboundbackport.lime_concrete_slab": "Dalle de béton vert clair",
+  "block.wildernessboundbackport.lime_concrete_stairs": "Escalier en béton vert clair",
+
+  "block.wildernessboundbackport.green_concrete_slab": "Dalle de béton verte",
+  "block.wildernessboundbackport.green_concrete_stairs": "Escalier en béton verte",
+
+  "block.wildernessboundbackport.cyan_concrete_slab": "Dalle de béton cyan",
+  "block.wildernessboundbackport.cyan_concrete_stairs": "Escalier en béton cyan",
+
+  "block.wildernessboundbackport.light_blue_concrete_slab": "Dalle de béton bleu clair",
+  "block.wildernessboundbackport.light_blue_concrete_stairs": "Escalier en béton bleu clair",
+
+  "block.wildernessboundbackport.blue_concrete_slab": "Dalle de béton bleu",
+  "block.wildernessboundbackport.blue_concrete_stairs": "Escalier en béton bleu",
+
+  "block.wildernessboundbackport.purple_concrete_slab": "Dalle de béton violette",
+  "block.wildernessboundbackport.purple_concrete_stairs": "Escalier en béton violette",
+
+  "block.wildernessboundbackport.magenta_concrete_slab": "Dalle de béton magenta",
+  "block.wildernessboundbackport.magenta_concrete_stairs": "Escalier en béton magenta",
+
+  "block.wildernessboundbackport.pink_concrete_slab": "Dalle de béton rose",
+  "block.wildernessboundbackport.pink_concrete_stairs": "Escalier en béton rose"
 }

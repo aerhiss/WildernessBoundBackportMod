@@ -20,7 +20,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
 
-        for (SlabAndStairs block : ModBlocks.WOOLSLABSANDSTAIRS){
+        for (SlabAndStairs block : ModBlocks.ALLSLABANDSTAIRS){
             dropSelf(block.getSlab().get());
             dropSelf(block.getStair().get());
         }

@@ -15,6 +15,12 @@ public class ModTags {
 
         public static final TagKey<Block> WOOL_STAIRS = createTag("wool_stairs");
 
+        public static final TagKey<Block> CONCRETE_SLABS = createTag("concrete_slabs");
+
+        public static final TagKey<Block> CONCRETE_STAIRS = createTag("concrete_stairs");
+
+        public static final TagKey<Block> CONCRETE = createTag("concrete");
+
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(WildernessBoundBackport.MODID,name));
@@ -26,6 +32,12 @@ public class ModTags {
         public static final TagKey<Item> WOOL_SLABS = createTag("wool_slabs");
 
         public static final TagKey<Item> WOOL_STAIRS = createTag("wool_stairs");
+
+        public static final TagKey<Item> CONCRETE_SLABS = createTag("concrete_slabs");
+
+        public static final TagKey<Item> CONCRETE_STAIRS = createTag("concrete_stairs");
+
+        public static final TagKey<Item> CONCRETE = createTag("concrete");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(WildernessBoundBackport.MODID,name));

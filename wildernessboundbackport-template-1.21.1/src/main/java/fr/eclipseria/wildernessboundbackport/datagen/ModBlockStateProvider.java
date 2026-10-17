@@ -18,7 +18,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        for (SlabAndStairs block : ModBlocks.WOOLSLABSANDSTAIRS){
+        for (SlabAndStairs block : ModBlocks.ALLSLABANDSTAIRS){
             slabBlock(block.getSlab().get(), blockTexture(block.getBlockType()), blockTexture(block.getBlockType()));
             blockItem(block.getSlab());
             stairsBlock(block.getStair().get(), blockTexture(block.getBlockType()));
