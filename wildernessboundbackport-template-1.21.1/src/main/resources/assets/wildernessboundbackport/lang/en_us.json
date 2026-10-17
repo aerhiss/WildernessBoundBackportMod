@@ -1,14 +1,52 @@
 {
-  "itemGroup.wildernessboundbackport": "Example Mod Tab",
-  "block.wildernessboundbackport.example_block": "Example Block",
-  "item.wildernessboundbackport.example_item": "Example Item",
+  "creativetab.wildernessboundbackport.wool_stairs_and_slabs": "Wool Slabs & Stairs",
 
-  "wildernessboundbackport.configuration.title": "Wilderness Bound Backport Configs",
-  "wildernessboundbackport.configuration.section.wildernessboundbackport.common.toml": "Wilderness Bound Backport Configs",
-  "wildernessboundbackport.configuration.section.wildernessboundbackport.common.toml.title": "Wilderness Bound Backport Configs",
-  "wildernessboundbackport.configuration.items": "Item List",
-  "wildernessboundbackport.configuration.logDirtBlock": "Log Dirt Block",
-  "wildernessboundbackport.configuration.magicNumberIntroduction": "Magic Number Text",
-  "wildernessboundbackport.configuration.magicNumber": "Magic Number",
-  "creativetab.wildernessboundbackport.wool_stairs_and_slabs": "Wool Slabs & Stairs"
+
+  "block.bloop.white_wool_slab": "White Wool Slab",
+  "block.bloop.white_wool_stairs": "White Wool Stairs",
+
+  "block.bloop.light_gray_wool_slab": "Light Gray Wool Slab",
+  "block.bloop.light_gray_wool_stairs": "Light Gray Wool Stairs",
+
+  "block.bloop.gray_wool_slab": "Gray Wool Slab",
+  "block.bloop.gray_wool_stairs": "Gray Wool Stairs",
+
+  "block.bloop.black_wool_slab": "Black Wool Slab",
+  "block.bloop.black_wool_stairs": "Black Wool Stairs",
+
+  "block.bloop.brown_wool_slab": "Brown Wool Slab",
+  "block.bloop.brown_wool_stairs": "Brown Wool Stairs",
+
+  "block.bloop.red_wool_slab": "Red Wool Slab",
+  "block.bloop.red_wool_stairs": "Red Wool Stairs",
+
+  "block.bloop.orange_wool_slab": "Orange Wool Slab",
+  "block.bloop.orange_wool_stairs": "Orange Wool Stairs",
+
+  "block.bloop.yellow_wool_slab": "Yellow Wool Slab",
+  "block.bloop.yellow_wool_stairs": "Yellow Wool Stairs",
+
+  "block.bloop.lime_wool_slab": "Lime Wool Slab",
+  "block.bloop.lime_wool_stairs": "Lime Wool Stairs",
+
+  "block.bloop.green_wool_slab": "Green Wool Slab",
+  "block.bloop.green_wool_stairs": "Green Wool Stairs",
+
+  "block.bloop.cyan_wool_slab": "Cyan Wool Slab",
+  "block.bloop.cyan_wool_stairs": "Cyan Wool Stairs",
+
+  "block.bloop.light_blue_wool_slab": "Light Blue Wool Slab",
+  "block.bloop.light_blue_wool_stairs": "Light Blue Wool Stairs",
+
+  "block.bloop.blue_wool_slab": "Blue Wool Slab",
+  "block.bloop.blue_wool_stairs": "Blue Wool Stairs",
+
+  "block.bloop.purple_wool_slab": "Purple Wool Slab",
+  "block.bloop.purple_wool_stairs": "Purple Wool Stairs",
+
+  "block.bloop.magenta_wool_slab": "Magenta Wool Slab",
+  "block.bloop.magenta_wool_stairs": "Magenta Wool Stairs",
+
+  "block.bloop.pink_wool_slab": "Pink Wool Slab",
+  "block.bloop.pink_wool_stairs": "Pink Wool Stairs"
 }
