@@ -35,6 +35,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             addMult(ModTags.Blocks.WOOL_STAIRS,block.getStair().get());
         }
 
+        for (SlabAndStairs block : ModBlocks.CONCRETESLABSANDSTAIRS){
+            addMult(BlockTags.SLABS,block.getSlab().get());
+            addMult(BlockTags.STAIRS,block.getStair().get());
+            addMult(BlockTags.MINEABLE_WITH_PICKAXE,block.getSlab().get());
+            addMult(BlockTags.MINEABLE_WITH_PICKAXE,block.getStair().get());
+            addMult(ModTags.Blocks.CONCRETE,block.getSlab().get());
+            addMult(ModTags.Blocks.CONCRETE,block.getStair().get());
+            addMult(ModTags.Blocks.CONCRETE_SLABS,block.getSlab().get());
+            addMult(ModTags.Blocks.CONCRETE_STAIRS,block.getStair().get());
+        }
+
     }
 
 

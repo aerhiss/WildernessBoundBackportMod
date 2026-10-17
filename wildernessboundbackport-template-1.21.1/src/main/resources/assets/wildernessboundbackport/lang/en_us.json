@@ -1,5 +1,12 @@
 {
   "creativetab.wildernessboundbackport.wool_stairs_and_slabs": "Wool Slabs & Stairs",
+  "creativetab.wildernessboundbackport.concrete_stairs_and_slabs": "Concrete Slabs & Stairs",
+
+  "tag.wildernessboundbackport.concrete": "Concrete",
+  "tag.wildernessboundbackport.concrete_slabs": "Concrete Slabs",
+  "tag.wildernessboundbackport.concrete_stairs": "Concrete Stairs",
+  "tag.wildernessboundbackport.wool_slabs": "Wool Slabs",
+  "tag.wildernessboundbackport.wool_stairs": "Wool Stairs",
 
 
   "block.wildernessboundbackport.white_wool_slab": "White Wool Slab",
@@ -48,5 +55,54 @@
   "block.wildernessboundbackport.magenta_wool_stairs": "Magenta Wool Stairs",
 
   "block.wildernessboundbackport.pink_wool_slab": "Pink Wool Slab",
-  "block.wildernessboundbackport.pink_wool_stairs": "Pink Wool Stairs"
+  "block.wildernessboundbackport.pink_wool_stairs": "Pink Wool Stairs",
+
+
+  "block.wildernessboundbackport.white_concrete_slab": "White Concrete Slab",
+  "block.wildernessboundbackport.white_concrete_stairs": "White Concrete Stairs",
+
+  "block.wildernessboundbackport.light_gray_concrete_slab": "Light Gray Concrete Slab",
+  "block.wildernessboundbackport.light_gray_concrete_stairs": "Light Gray Concrete Stairs",
+
+  "block.wildernessboundbackport.gray_concrete_slab": "Gray Concrete Slab",
+  "block.wildernessboundbackport.gray_concrete_stairs": "Gray Concrete Stairs",
+
+  "block.wildernessboundbackport.black_concrete_slab": "Black Concrete Slab",
+  "block.wildernessboundbackport.black_concrete_stairs": "Black Concrete Stairs",
+
+  "block.wildernessboundbackport.brown_concrete_slab": "Brown Concrete Slab",
+  "block.wildernessboundbackport.brown_concrete_stairs": "Brown Concrete Stairs",
+
+  "block.wildernessboundbackport.red_concrete_slab": "Red Concrete Slab",
+  "block.wildernessboundbackport.red_concrete_stairs": "Red Concrete Stairs",
+
+  "block.wildernessboundbackport.orange_concrete_slab": "Orange Concrete Slab",
+  "block.wildernessboundbackport.orange_concrete_stairs": "Orange Concrete Stairs",
+
+  "block.wildernessboundbackport.yellow_concrete_slab": "Yellow Concrete Slab",
+  "block.wildernessboundbackport.yellow_concrete_stairs": "Yellow Concrete Stairs",
+
+  "block.wildernessboundbackport.lime_concrete_slab": "Lime Concrete Slab",
+  "block.wildernessboundbackport.lime_concrete_stairs": "Lime Concrete Stairs",
+
+  "block.wildernessboundbackport.green_concrete_slab": "Green Concrete Slab",
+  "block.wildernessboundbackport.green_concrete_stairs": "Green Concrete Stairs",
+
+  "block.wildernessboundbackport.cyan_concrete_slab": "Cyan Concrete Slab",
+  "block.wildernessboundbackport.cyan_concrete_stairs": "Cyan Concrete Stairs",
+
+  "block.wildernessboundbackport.light_blue_concrete_slab": "Light Blue Concrete Slab",
+  "block.wildernessboundbackport.light_blue_concrete_stairs": "Light Blue Concrete Stairs",
+
+  "block.wildernessboundbackport.blue_concrete_slab": "Blue Concrete Slab",
+  "block.wildernessboundbackport.blue_concrete_stairs": "Blue Concrete Stairs",
+
+  "block.wildernessboundbackport.purple_concrete_slab": "Purple Concrete Slab",
+  "block.wildernessboundbackport.purple_concrete_stairs": "Purple Concrete Stairs",
+
+  "block.wildernessboundbackport.magenta_concrete_slab": "Magenta Concrete Slab",
+  "block.wildernessboundbackport.magenta_concrete_stairs": "Magenta Concrete Stairs",
+
+  "block.wildernessboundbackport.pink_concrete_slab": "Pink Concrete Slab",
+  "block.wildernessboundbackport.pink_concrete_stairs": "Pink Concrete Stairs"
 }
