@@ -1,6 +1,7 @@
 package fr.eclipseria.wildernessboundbackport.block;
 
 import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
+import fr.eclipseria.wildernessboundbackport.block.custom.FlammableSlabAndStairs;
 import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
 import fr.eclipseria.wildernessboundbackport.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -40,7 +41,7 @@ public class ModBlocks {
     public static final SlabAndStairs PINK_WOOL = registerWoolSlabAndStair("pink_wool", Blocks.PINK_WOOL);
 
     public static SlabAndStairs registerWoolSlabAndStair(String name, Block blockType) {
-        SlabAndStairs reg = new SlabAndStairs(name, blockType);
+        SlabAndStairs reg = new FlammableSlabAndStairs(name, blockType);
         WOOLSLABSANDSTAIRS.add(reg);
         return reg;
     }
