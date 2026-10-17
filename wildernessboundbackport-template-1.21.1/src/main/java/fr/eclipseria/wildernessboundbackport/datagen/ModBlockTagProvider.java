@@ -3,6 +3,7 @@ package fr.eclipseria.wildernessboundbackport.datagen;
 import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
 import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
+import fr.eclipseria.wildernessboundbackport.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -28,6 +29,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             addMult(BlockTags.DAMPENS_VIBRATIONS,block.getStair().get());
             addMult(BlockTags.SLABS,block.getSlab().get());
             addMult(BlockTags.STAIRS,block.getStair().get());
+            addMult(ModTags.Blocks.WOOL_SLABS,block.getSlab().get());
+            addMult(ModTags.Blocks.WOOL_STAIRS,block.getStair().get());
         }
 
     }
