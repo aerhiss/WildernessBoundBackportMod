@@ -9,5 +9,6 @@
   "wildernessboundbackport.configuration.items": "Item List",
   "wildernessboundbackport.configuration.logDirtBlock": "Log Dirt Block",
   "wildernessboundbackport.configuration.magicNumberIntroduction": "Magic Number Text",
-  "wildernessboundbackport.configuration.magicNumber": "Magic Number"
+  "wildernessboundbackport.configuration.magicNumber": "Magic Number",
+  "creativetab.wildernessboundbackport.wool_stairs_and_slabs": "Wool Slabs & Stairs"
 }
