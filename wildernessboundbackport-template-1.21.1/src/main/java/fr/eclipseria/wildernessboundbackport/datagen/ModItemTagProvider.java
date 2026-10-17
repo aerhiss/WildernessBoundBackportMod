@@ -31,6 +31,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
             addMult(ItemTags.DAMPENS_VIBRATIONS,block.getStair().get().asItem());
             addMult(ItemTags.SLABS,block.getSlab().get().asItem());
             addMult(ItemTags.STAIRS,block.getStair().get().asItem());
+            addMult(ItemTags.WOOL,block.getSlab().get().asItem());
+            addMult(ItemTags.WOOL,block.getStair().get().asItem());
             addMult(ModTags.Items.WOOL_SLABS,block.getSlab().get().asItem());
             addMult(ModTags.Items.WOOL_STAIRS,block.getStair().get().asItem());
         }

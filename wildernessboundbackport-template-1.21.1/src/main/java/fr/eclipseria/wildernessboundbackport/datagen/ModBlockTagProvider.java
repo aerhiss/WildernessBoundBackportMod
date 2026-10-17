@@ -29,6 +29,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             addMult(BlockTags.DAMPENS_VIBRATIONS,block.getStair().get());
             addMult(BlockTags.SLABS,block.getSlab().get());
             addMult(BlockTags.STAIRS,block.getStair().get());
+            addMult(BlockTags.WOOL,block.getSlab().get());
+            addMult(BlockTags.WOOL,block.getStair().get());
             addMult(ModTags.Blocks.WOOL_SLABS,block.getSlab().get());
             addMult(ModTags.Blocks.WOOL_STAIRS,block.getStair().get());
         }
