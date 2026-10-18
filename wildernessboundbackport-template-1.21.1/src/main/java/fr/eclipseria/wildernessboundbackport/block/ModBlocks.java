@@ -2,12 +2,15 @@ package fr.eclipseria.wildernessboundbackport.block;
 
 import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
 import fr.eclipseria.wildernessboundbackport.block.custom.FlammableSlabAndStairs;
+import fr.eclipseria.wildernessboundbackport.block.custom.ModWoodSet;
 import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
 import fr.eclipseria.wildernessboundbackport.item.ModItems;
+import fr.eclipseria.wildernessboundbackport.util.ModWoodType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -23,6 +26,7 @@ public class ModBlocks {
 
     public static final List<SlabAndStairs> WOOLSLABSANDSTAIRS = new ArrayList<>();
     public static final List<SlabAndStairs> CONCRETESLABSANDSTAIRS = new ArrayList<>();
+    public static final List<ModWoodSet> POPLARSET = new ArrayList<>();
     public static final List<SlabAndStairs> ALLSLABANDSTAIRS = new ArrayList<>();
 
     public static final SlabAndStairs WHITE_WOOL = registerWoolSlabAndStair("white_wool", Blocks.WHITE_WOOL);
@@ -59,10 +63,18 @@ public class ModBlocks {
     public static final SlabAndStairs MAGENTA_CONCRETE = registerSlabAndStair("magenta_concrete", Blocks.MAGENTA_CONCRETE);
     public static final SlabAndStairs PINK_CONCRETE = registerSlabAndStair("pink_concrete", Blocks.PINK_CONCRETE);
 
+    public static final ModWoodSet POPLAR = registerWoodSet("poplar", ModWoodType.POPLAR);
+
     public static SlabAndStairs registerWoolSlabAndStair(String name, Block blockType) {
         SlabAndStairs reg = new FlammableSlabAndStairs(name, blockType);
         WOOLSLABSANDSTAIRS.add(reg);
         ALLSLABANDSTAIRS.add(reg);
+        return reg;
+    }
+
+    public static ModWoodSet registerWoodSet(String name, WoodType blockType) {
+        ModWoodSet reg = new ModWoodSet(name, blockType);
+        POPLARSET.add(reg);
         return reg;
     }
 

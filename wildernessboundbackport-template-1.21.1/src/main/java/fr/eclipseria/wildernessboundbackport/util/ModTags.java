@@ -21,6 +21,8 @@ public class ModTags {
 
         public static final TagKey<Block> CONCRETE = createTag("concrete");
 
+        public static final TagKey<Block> POPLAR = createTag("poplar");
+
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(WildernessBoundBackport.MODID,name));
@@ -38,6 +40,8 @@ public class ModTags {
         public static final TagKey<Item> CONCRETE_STAIRS = createTag("concrete_stairs");
 
         public static final TagKey<Item> CONCRETE = createTag("concrete");
+
+        public static final TagKey<Item> POPLAR = createTag("poplar");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(WildernessBoundBackport.MODID,name));

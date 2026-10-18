@@ -41,6 +41,30 @@ public class ModCreativeModeTabs {
                     .build()
     );
 
+    public static final Supplier<CreativeModeTab> POPLARSET = CREATIVE_MODE_TAB.register(
+            "poplar_set_tab",
+            () -> CreativeModeTab.builder().icon(ModBlocks.POPLAR.getWood()::toStack)
+                    .title(Component.translatable("creativetab.wildernessboundbackport.concrete_stairs_and_slabs"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModBlocks.POPLAR.getLog().get());
+                        output.accept(ModBlocks.POPLAR.getStrippedLog().get());
+                        output.accept(ModBlocks.POPLAR.getWood().get());
+                        output.accept(ModBlocks.POPLAR.getStrippedWood().get());
+                        output.accept(ModBlocks.POPLAR.getPlanks().get());
+                        output.accept(ModBlocks.POPLAR.getStair().get());
+                        output.accept(ModBlocks.POPLAR.getSlab().get());
+                        output.accept(ModBlocks.POPLAR.getDoor().get());
+                        output.accept(ModBlocks.POPLAR.getTrapdoor().get());
+                        output.accept(ModBlocks.POPLAR.getButton().get());
+                        output.accept(ModBlocks.POPLAR.getPressurePlate().get());
+                        output.accept(ModBlocks.POPLAR.getFence().get());
+                        output.accept(ModBlocks.POPLAR.getFenceGate().get());
+
+                    })
+                    .build()
+    );
+
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TAB.register(eventBus);
     }

@@ -1,6 +1,7 @@
 package fr.eclipseria.wildernessboundbackport.datagen;
 
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
+import fr.eclipseria.wildernessboundbackport.block.custom.ModWoodSet;
 import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
@@ -23,6 +24,22 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         for (SlabAndStairs block : ModBlocks.ALLSLABANDSTAIRS){
             dropSelf(block.getSlab().get());
             dropSelf(block.getStair().get());
+        }
+
+        for (ModWoodSet block : ModBlocks.POPLARSET){
+            dropSelf(block.getLog().get());
+            dropSelf(block.getStrippedLog().get());
+            dropSelf(block.getWood().get());
+            dropSelf(block.getStrippedWood().get());
+            dropSelf(block.getPlanks().get());
+            dropSelf(block.getStair().get());
+            dropSelf(block.getSlab().get());
+            dropSelf(block.getDoor().get());
+            dropSelf(block.getTrapdoor().get());
+            dropSelf(block.getButton().get());
+            dropSelf(block.getPressurePlate().get());
+            dropSelf(block.getFence().get());
+            dropSelf(block.getFenceGate().get());
         }
     }
 
