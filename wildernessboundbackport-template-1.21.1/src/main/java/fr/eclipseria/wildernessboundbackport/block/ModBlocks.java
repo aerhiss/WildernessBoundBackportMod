@@ -26,7 +26,7 @@ public class ModBlocks {
 
     public static final List<SlabAndStairs> WOOLSLABSANDSTAIRS = new ArrayList<>();
     public static final List<SlabAndStairs> CONCRETESLABSANDSTAIRS = new ArrayList<>();
-    public static final List<ModWoodSet> POPLARSET = new ArrayList<>();
+    public static final List<ModWoodSet> WOODSET = new ArrayList<>();
     public static final List<SlabAndStairs> ALLSLABANDSTAIRS = new ArrayList<>();
 
     public static final SlabAndStairs WHITE_WOOL = registerWoolSlabAndStair("white_wool", Blocks.WHITE_WOOL);
@@ -74,7 +74,7 @@ public class ModBlocks {
 
     public static ModWoodSet registerWoodSet(String name, WoodType blockType) {
         ModWoodSet reg = new ModWoodSet(name, blockType);
-        POPLARSET.add(reg);
+        WOODSET.add(reg);
         return reg;
     }
 

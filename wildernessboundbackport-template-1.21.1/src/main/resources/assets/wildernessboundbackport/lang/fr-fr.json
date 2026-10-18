@@ -9,6 +9,7 @@
   "tag.wildernessboundbackport.wool_slabs": "Dalles de laine",
   "tag.wildernessboundbackport.wool_stairs": "Escalier en laine",
   "tag.wildernessboundbackport.poplar": "Peuplier",
+  "tag.wildernessboundbackport.poplar_logs": "Bûches de peuplier",
 
   "block.wildernessboundbackport.white_wool_slab": "Dalle de laine blanche",
   "block.wildernessboundbackport.white_wool_stairs": "Escalier en laine blanche",
@@ -105,5 +106,22 @@
   "block.wildernessboundbackport.magenta_concrete_stairs": "Escalier en béton magenta",
 
   "block.wildernessboundbackport.pink_concrete_slab": "Dalle de béton rose",
-  "block.wildernessboundbackport.pink_concrete_stairs": "Escalier en béton rose"
+  "block.wildernessboundbackport.pink_concrete_stairs": "Escalier en béton rose",
+
+  "block.wildernessboundbackport.poplar_log" : "Bûche de peuplier",
+  "block.wildernessboundbackport.stripped_poplar_log" : "Bûche de peuplier écorcée",
+
+  "block.wildernessboundbackport.poplar_wood" : "Bois de peuplier",
+  "block.wildernessboundbackport.stripped_poplar_wood" : "Bois de peuplier écorcée",
+
+  "block.wildernessboundbackport.poplar_planks" : "Plache de peuplier",
+
+  "block.wildernessboundbackport.poplar_slab" : "Dalle en peuplier",
+  "block.wildernessboundbackport.poplar_stairs" : "Escalier en peuplier",
+  "block.wildernessboundbackport.poplar_pressure_plate" : "Plaque de pression en peuplier",
+  "block.wildernessboundbackport.poplar_button" : "Bouton en peuplier",
+  "block.wildernessboundbackport.poplar_trapdoor" : "Trappe en peuplier",
+  "block.wildernessboundbackport.poplar_door" : "Porte en peuplier",
+  "block.wildernessboundbackport.poplar_fence" : "Barrière en peuplier",
+  "block.wildernessboundbackport.poplar_fence_gate" : "Portillon en peuplier"
 }

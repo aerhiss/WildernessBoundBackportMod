@@ -26,20 +26,20 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
             dropSelf(block.getStair().get());
         }
 
-        for (ModWoodSet block : ModBlocks.POPLARSET){
-            dropSelf(block.getLog().get());
-            dropSelf(block.getStrippedLog().get());
-            dropSelf(block.getWood().get());
-            dropSelf(block.getStrippedWood().get());
-            dropSelf(block.getPlanks().get());
-            dropSelf(block.getStair().get());
-            dropSelf(block.getSlab().get());
-            dropSelf(block.getDoor().get());
-            dropSelf(block.getTrapdoor().get());
-            dropSelf(block.getButton().get());
-            dropSelf(block.getPressurePlate().get());
-            dropSelf(block.getFence().get());
-            dropSelf(block.getFenceGate().get());
+        for (ModWoodSet set : ModBlocks.WOODSET){
+            dropSelf(set.getLog().get());
+            dropSelf(set.getStrippedLog().get());
+            dropSelf(set.getWood().get());
+            dropSelf(set.getStrippedWood().get());
+            dropSelf(set.getPlanks().get());
+            dropSelf(set.getStair().get());
+            dropSelf(set.getSlab().get());
+            dropSelf(set.getDoor().get());
+            dropSelf(set.getTrapdoor().get());
+            dropSelf(set.getButton().get());
+            dropSelf(set.getPressurePlate().get());
+            dropSelf(set.getFence().get());
+            dropSelf(set.getFenceGate().get());
         }
     }
 

@@ -2,11 +2,13 @@ package fr.eclipseria.wildernessboundbackport.datagen;
 
 import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
+import fr.eclipseria.wildernessboundbackport.block.custom.ModWoodSet;
 import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
 import fr.eclipseria.wildernessboundbackport.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
@@ -44,6 +46,23 @@ public class ModItemTagProvider extends ItemTagsProvider {
             addMult(ModTags.Items.CONCRETE,block.getStair().get().asItem());
             addMult(ModTags.Items.CONCRETE_SLABS,block.getSlab().get().asItem());
             addMult(ModTags.Items.CONCRETE_STAIRS,block.getStair().get().asItem());
+        }
+
+        for (ModWoodSet set : ModBlocks.WOODSET) {
+            addMult(ItemTags.LOGS, set.getLog().get().asItem());
+            addMult(ItemTags.LOGS, set.getStrippedLog().get().asItem());
+            addMult(ItemTags.LOGS, set.getWood().get().asItem());
+            addMult(ItemTags.LOGS, set.getStrippedWood().get().asItem());
+
+            addMult(ItemTags.LOGS_THAT_BURN, set.getLog().get().asItem());
+            addMult(ItemTags.LOGS_THAT_BURN, set.getStrippedLog().get().asItem());
+            addMult(ItemTags.LOGS_THAT_BURN, set.getWood().get().asItem());
+            addMult(ItemTags.LOGS_THAT_BURN, set.getStrippedWood().get().asItem());
+
+            addMult(ModTags.Items.POPLAR_LOGS, set.getLog().get().asItem());
+            addMult(ModTags.Items.POPLAR_LOGS, set.getStrippedLog().get().asItem());
+            addMult(ModTags.Items.POPLAR_LOGS, set.getWood().get().asItem());
+            addMult(ModTags.Items.POPLAR_LOGS, set.getStrippedWood().get().asItem());
         }
 
     }

@@ -8,6 +8,7 @@
   "tag.wildernessboundbackport.wool_slabs": "Wool Slabs",
   "tag.wildernessboundbackport.wool_stairs": "Wool Stairs",
   "tag.wildernessboundbackport.poplar": "Poplar",
+  "tag.wildernessboundbackport.poplar_logs": "Poplar Logs",
 
 
   "block.wildernessboundbackport.white_wool_slab": "White Wool Slab",
@@ -105,5 +106,22 @@
   "block.wildernessboundbackport.magenta_concrete_stairs": "Magenta Concrete Stairs",
 
   "block.wildernessboundbackport.pink_concrete_slab": "Pink Concrete Slab",
-  "block.wildernessboundbackport.pink_concrete_stairs": "Pink Concrete Stairs"
+  "block.wildernessboundbackport.pink_concrete_stairs": "Pink Concrete Stairs",
+
+  "block.wildernessboundbackport.poplar_log" : "Poplar Log",
+  "block.wildernessboundbackport.stripped_poplar_log" : "Stripped Poplar Log",
+
+  "block.wildernessboundbackport.poplar_wood" : "Poplar Wood",
+  "block.wildernessboundbackport.stripped_poplar_wood" : "Stripped Poplar Wood",
+
+  "block.wildernessboundbackport.poplar_planks" : "Poplar Planks",
+
+  "block.wildernessboundbackport.poplar_slab" : "Poplar Slab",
+  "block.wildernessboundbackport.poplar_stairs" : "Poplar Stairs",
+  "block.wildernessboundbackport.poplar_pressure_plate" : "Poplar Pressure Plate",
+  "block.wildernessboundbackport.poplar_button" : "Poplar Button",
+  "block.wildernessboundbackport.poplar_trapdoor" : "Poplar Trapdoor",
+  "block.wildernessboundbackport.poplar_door" : "Poplar Door",
+  "block.wildernessboundbackport.poplar_fence" : "Poplar Fence",
+  "block.wildernessboundbackport.poplar_fence_gate" : "Poplar Fence Gate"
 }
