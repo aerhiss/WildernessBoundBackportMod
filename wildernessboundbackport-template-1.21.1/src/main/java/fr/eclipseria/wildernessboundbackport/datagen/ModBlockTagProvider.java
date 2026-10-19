@@ -26,64 +26,102 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.@NotNull Provider provider) {
 
         for (SlabAndStairs block : ModBlocks.WOOLSLABSANDSTAIRS){
-            addMult(BlockTags.DAMPENS_VIBRATIONS,block.getSlab().get());
-            addMult(BlockTags.DAMPENS_VIBRATIONS,block.getStair().get());
+            Block slab = block.getSlab().get();
+            Block stair = block.getStair().get();
 
-            addMult(BlockTags.SLABS,block.getSlab().get());
+            //VANILLA
 
-            addMult(BlockTags.STAIRS,block.getStair().get());
+            tag(BlockTags.DAMPENS_VIBRATIONS).add(slab, stair);
+            tag(BlockTags.WOOL).add(slab, stair);
 
-            addMult(BlockTags.WOOL,block.getSlab().get());
-            addMult(BlockTags.WOOL,block.getStair().get());
+            tag(BlockTags.SLABS).add(slab);
 
-            addMult(ModTags.Blocks.WOOL_SLABS,block.getSlab().get());
+            tag(BlockTags.STAIRS).add(stair);
 
-            addMult(ModTags.Blocks.WOOL_STAIRS,block.getStair().get());
+            //CUSTOM
+
+            tag(ModTags.Blocks.WOOL_SLABS).add(slab);
+
+            tag(ModTags.Blocks.WOOL_STAIRS).add(stair);
         }
 
         for (SlabAndStairs block : ModBlocks.CONCRETESLABSANDSTAIRS){
-            addMult(BlockTags.SLABS,block.getSlab().get());
+                Block slab = block.getSlab().get();
+                Block stair = block.getStair().get();
 
-            addMult(BlockTags.STAIRS,block.getStair().get());
+            //VANILLA
 
-            addMult(BlockTags.MINEABLE_WITH_PICKAXE,block.getSlab().get());
-            addMult(BlockTags.MINEABLE_WITH_PICKAXE,block.getStair().get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(slab, stair);
 
-            addMult(ModTags.Blocks.CONCRETE,block.getSlab().get());
-            addMult(ModTags.Blocks.CONCRETE,block.getStair().get());
+            tag(BlockTags.SLABS).add(slab);
 
-            addMult(ModTags.Blocks.CONCRETE_SLABS,block.getSlab().get());
+            tag(BlockTags.STAIRS).add(stair);
 
-            addMult(ModTags.Blocks.CONCRETE_STAIRS,block.getStair().get());
+            //CUSTOM
+
+            tag(ModTags.Blocks.CONCRETE).add(slab, stair);
+
+            tag(ModTags.Blocks.CONCRETE_SLABS).add(slab);
+
+            tag(ModTags.Blocks.CONCRETE_STAIRS).add(stair);
         }
 
         for (ModWoodSet set : ModBlocks.WOODSET){
-            addMult(BlockTags.LOGS,set.getLog().get());
-            addMult(BlockTags.LOGS,set.getStrippedLog().get());
-            addMult(BlockTags.LOGS,set.getWood().get());
-            addMult(BlockTags.LOGS,set.getStrippedWood().get());
+            Block log = set.getLog().get();
+            Block strippedLog = set.getStrippedLog().get();
+            Block wood = set.getWood().get();
+            Block strippedWood = set.getStrippedWood().get();
+            Block planks = set.getPlanks().get();
+            Block stair = set.getStair().get();
+            Block slab = set.getSlab().get();
+            Block door = set.getDoor().get();
+            Block trapdoor = set.getTrapdoor().get();
+            Block button = set.getButton().get();
+            Block pressurePlate = set.getPressurePlate().get();
+            Block fence = set.getFence().get();
+            Block fenceGate = set.getFenceGate().get();
 
-            addMult(BlockTags.LOGS_THAT_BURN,set.getLog().get());
-            addMult(BlockTags.LOGS_THAT_BURN,set.getStrippedLog().get());
-            addMult(BlockTags.LOGS_THAT_BURN,set.getWood().get());
-            addMult(BlockTags.LOGS_THAT_BURN,set.getStrippedWood().get());
+            //VANILLA
 
-            addMult(BlockTags.MINEABLE_WITH_AXE,set.getLog().get());
-            addMult(BlockTags.MINEABLE_WITH_AXE,set.getStrippedLog().get());
-            addMult(BlockTags.MINEABLE_WITH_AXE,set.getWood().get());
-            addMult(BlockTags.MINEABLE_WITH_AXE,set.getStrippedWood().get());
+            tag(BlockTags.LOGS).add(log, strippedLog, wood, strippedWood);
+            tag(BlockTags.LOGS_THAT_BURN).add(log, strippedLog, wood, strippedWood);
+            tag(BlockTags.MINEABLE_WITH_AXE).add(log, strippedLog, wood, strippedWood, planks, stair, slab);
 
-            addMult(ModTags.Blocks.POPLAR_LOGS,set.getLog().get());
-            addMult(ModTags.Blocks.POPLAR_LOGS,set.getStrippedLog().get());
-            addMult(ModTags.Blocks.POPLAR_LOGS,set.getWood().get());
-            addMult(ModTags.Blocks.POPLAR_LOGS,set.getStrippedWood().get());
+            tag(BlockTags.PLANKS).add(planks);
+
+            tag(BlockTags.STAIRS).add(stair);
+            tag(BlockTags.WOODEN_STAIRS).add(stair);
+
+            tag(BlockTags.SLABS).add(slab);
+            tag(BlockTags.WOODEN_SLABS).add(slab);
+
+            tag(BlockTags.DOORS).add(door);
+            tag(BlockTags.WOODEN_DOORS).add(door);
+            tag(BlockTags.MOB_INTERACTABLE_DOORS).add(door);
+
+            tag(BlockTags.TRAPDOORS).add(trapdoor);
+            tag(BlockTags.WOODEN_TRAPDOORS).add(trapdoor);
+
+            tag(BlockTags.BUTTONS).add(button);
+            tag(BlockTags.WOODEN_BUTTONS).add(button);
+
+            tag(BlockTags.PRESSURE_PLATES).add(pressurePlate);
+            tag(BlockTags.WOODEN_PRESSURE_PLATES).add(pressurePlate);
+            tag(BlockTags.WALL_POST_OVERRIDE).add(pressurePlate);
+
+            tag(BlockTags.FENCES).add(fence);
+            tag(BlockTags.WOODEN_FENCES).add(fence);
+
+            tag(BlockTags.FENCE_GATES).add(fenceGate);
+            tag(BlockTags.UNSTABLE_BOTTOM_CENTER).add(fenceGate);
+
+
+            //CUSTOM
+
+            tag(ModTags.Blocks.POPLAR_LOGS).add(log, strippedLog, wood, strippedWood);
+
         }
 
-    }
-
-
-    public void addMult(TagKey<Block> tag, Block block) {
-        tag(tag).add(block);
     }
 
 }
