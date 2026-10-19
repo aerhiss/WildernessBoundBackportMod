@@ -21,8 +21,6 @@ public class ModTags {
 
         public static final TagKey<Block> CONCRETE = createTag("concrete");
 
-        public static final TagKey<Block> POPLAR = createTag("poplar");
-
         public static final TagKey<Block> POPLAR_LOGS = createTag("poplar_logs");
 
 
@@ -42,8 +40,6 @@ public class ModTags {
         public static final TagKey<Item> CONCRETE_STAIRS = createTag("concrete_stairs");
 
         public static final TagKey<Item> CONCRETE = createTag("concrete");
-
-        public static final TagKey<Item> POPLAR = createTag("poplar");
 
         public static final TagKey<Item> POPLAR_LOGS = createTag("poplar_logs");
 
