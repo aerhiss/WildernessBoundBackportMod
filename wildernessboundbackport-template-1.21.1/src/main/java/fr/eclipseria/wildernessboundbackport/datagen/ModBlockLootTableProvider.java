@@ -41,6 +41,30 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
             dropSelf(set.getFence().get());
             dropSelf(set.getFenceGate().get());
         }
+
+        dropSelf(ModBlocks.POPLAR_SAPLING.get());
+
+        add(ModBlocks.RED_POPLAR_LEAVES.get(), block ->
+                createLeavesDrops(
+                        block,
+                        ModBlocks.POPLAR_SAPLING.get(),
+                        NORMAL_LEAVES_SAPLING_CHANCES
+                )
+        );
+        add(ModBlocks.ORANGE_POPLAR_LEAVES.get(), block ->
+                createLeavesDrops(
+                        block,
+                        ModBlocks.POPLAR_SAPLING.get(),
+                        NORMAL_LEAVES_SAPLING_CHANCES
+                )
+        );
+        add(ModBlocks.YELLOW_POPLAR_LEAVES.get(), block ->
+                createLeavesDrops(
+                        block,
+                        ModBlocks.POPLAR_SAPLING.get(),
+                        NORMAL_LEAVES_SAPLING_CHANCES
+                )
+        );
     }
 
     @Override

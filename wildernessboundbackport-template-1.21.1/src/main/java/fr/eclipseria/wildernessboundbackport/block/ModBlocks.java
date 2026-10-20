@@ -2,14 +2,18 @@ package fr.eclipseria.wildernessboundbackport.block;
 
 import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
 import fr.eclipseria.wildernessboundbackport.block.custom.FlammableSlabAndStairs;
+import fr.eclipseria.wildernessboundbackport.block.custom.ModLeavesBlock;
 import fr.eclipseria.wildernessboundbackport.block.custom.ModWoodSet;
 import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
 import fr.eclipseria.wildernessboundbackport.item.ModItems;
 import fr.eclipseria.wildernessboundbackport.util.ModWoodType;
+import fr.eclipseria.wildernessboundbackport.worldgen.tree.ModTreeGrowers;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SaplingBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -65,6 +69,20 @@ public class ModBlocks {
 
     public static final ModWoodSet POPLAR = registerWoodSet("poplar", ModWoodType.POPLAR);
 
+    public static final DeferredBlock<ModLeavesBlock> RED_POPLAR_LEAVES = registerLeaf("red_poplar_leaves", Blocks.OAK_LEAVES);
+    public static final DeferredBlock<ModLeavesBlock> ORANGE_POPLAR_LEAVES = registerLeaf("orange_poplar_leaves", Blocks.OAK_LEAVES);
+    public static final DeferredBlock<ModLeavesBlock> YELLOW_POPLAR_LEAVES = registerLeaf("yellow_poplar_leaves", Blocks.OAK_LEAVES);
+
+    public static final DeferredBlock<Block> POPLAR_SAPLING =
+            registerBlock(
+                    "poplar_sapling",
+                    () -> new SaplingBlock(
+                            ModTreeGrowers.POPLAR,
+                            BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)
+                    )
+            );
+
+
     public static SlabAndStairs registerWoolSlabAndStair(String name, Block blockType) {
         SlabAndStairs reg = new FlammableSlabAndStairs(name, blockType);
         WOOLSLABSANDSTAIRS.add(reg);
@@ -75,6 +93,12 @@ public class ModBlocks {
     public static ModWoodSet registerWoodSet(String name, WoodType blockType) {
         ModWoodSet reg = new ModWoodSet(name, blockType);
         WOODSET.add(reg);
+        return reg;
+    }
+
+    public static DeferredBlock<ModLeavesBlock> registerLeaf(String name, Block block){
+        DeferredBlock<ModLeavesBlock> reg = registerBlock( name, () -> new ModLeavesBlock(block));
+
         return reg;
     }
 

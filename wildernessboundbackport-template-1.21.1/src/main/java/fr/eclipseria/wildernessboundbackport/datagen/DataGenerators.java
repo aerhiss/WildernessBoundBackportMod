@@ -91,5 +91,7 @@ public class DataGenerators {
                             existingFileHelper
                     )
             );
+
+            generator.addProvider(event.includeServer(), new ModDatapackProvider(packOutput, lookupProvider));
         }
 }

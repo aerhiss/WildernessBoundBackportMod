@@ -44,7 +44,7 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> POPLARSET = CREATIVE_MODE_TAB.register(
             "poplar_set_tab",
             () -> CreativeModeTab.builder().icon(ModBlocks.POPLAR.getWood()::toStack)
-                    .title(Component.translatable("creativetab.wildernessboundbackport.concrete_stairs_and_slabs"))
+                    .title(Component.translatable("creativetab.wildernessboundbackport.polar_wood_set"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModBlocks.POPLAR.getLog().get());
@@ -60,6 +60,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.POPLAR.getPressurePlate().get());
                         output.accept(ModBlocks.POPLAR.getFence().get());
                         output.accept(ModBlocks.POPLAR.getFenceGate().get());
+                        output.accept(ModBlocks.RED_POPLAR_LEAVES.get());
+                        output.accept(ModBlocks.ORANGE_POPLAR_LEAVES.get());
+                        output.accept(ModBlocks.YELLOW_POPLAR_LEAVES.get());
+                        output.accept(ModBlocks.POPLAR_SAPLING.get());
 
                     })
                     .build()

@@ -2,8 +2,12 @@ package fr.eclipseria.wildernessboundbackport.datagen;
 
 import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
+import fr.eclipseria.wildernessboundbackport.block.custom.ModLeavesBlock;
 import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -61,7 +65,28 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
             trapdoorBlockWithRenderType(ModBlocks.POPLAR.getTrapdoor().get(), modLoc("block/poplar_trapdoor"),true,"cutout");
 
+            leavesBlock(ModBlocks.RED_POPLAR_LEAVES);
+            leavesBlock(ModBlocks.ORANGE_POPLAR_LEAVES);
+            leavesBlock(ModBlocks.YELLOW_POPLAR_LEAVES);
 
+            saplingBlock(ModBlocks.POPLAR_SAPLING);
+    }
+
+    private void saplingBlock(DeferredBlock<Block> blockRegisteryObject){
+        simpleBlock(
+                blockRegisteryObject.get(),
+                models()
+                        .cross(BuiltInRegistries.BLOCK.getKey(
+                                        blockRegisteryObject.get()).getPath(),
+                                blockTexture(blockRegisteryObject.get())
+                        ).renderType("cutout")
+        );
+    }
+
+    private void leavesBlock(DeferredBlock<ModLeavesBlock> blockRegisteryObject){
+        simpleBlockWithItem(blockRegisteryObject.get(),models().singleTexture(BuiltInRegistries.BLOCK.getKey(
+                        blockRegisteryObject.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                "all",blockTexture(blockRegisteryObject.get())).renderType("cutout"));
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock){

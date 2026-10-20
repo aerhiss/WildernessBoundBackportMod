@@ -1,7 +1,7 @@
 {
   "creativetab.wildernessboundbackport.wool_stairs_and_slabs": "Escaliers et dalles de laine",
   "creativetab.wildernessboundbackport.concrete_stairs_and_slabs": "Escaliers et dalles de béton",
-
+  "creativetab.wildernessboundbackport.polar_wood_set": "Bois de peuplier",
 
   "tag.wildernessboundbackport.concrete": "Béton",
   "tag.wildernessboundbackport.concrete_slabs": "Dalles de béton",
@@ -123,5 +123,10 @@
   "block.wildernessboundbackport.poplar_trapdoor" : "Trappe en peuplier",
   "block.wildernessboundbackport.poplar_door" : "Porte en peuplier",
   "block.wildernessboundbackport.poplar_fence" : "Barrière en peuplier",
-  "block.wildernessboundbackport.poplar_fence_gate" : "Portillon en peuplier"
+  "block.wildernessboundbackport.poplar_fence_gate" : "Portillon en peuplier",
+
+  "block.wildernessboundbackport.poplar_sapling" : "Pousse de peuplier",
+  "block.wildernessboundbackport.red_poplar_leaves" : "Feuilles de peuplier rouges",
+  "block.wildernessboundbackport.orange_poplar_leaves" : "Feuilles de peuplier orange",
+  "block.wildernessboundbackport.yellow_poplar_leaves" : "Feuilles de peuplier jaune"
 }

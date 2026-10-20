@@ -3,6 +3,8 @@ package fr.eclipseria.wildernessboundbackport;
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
 import fr.eclipseria.wildernessboundbackport.item.ModCreativeModeTabs;
 import fr.eclipseria.wildernessboundbackport.item.ModItems;
+import fr.eclipseria.wildernessboundbackport.worldgen.tree.ModFoliagePlacerTypes;
+import fr.eclipseria.wildernessboundbackport.worldgen.tree.ModTrunkPlacerTypes;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -37,6 +39,9 @@ public class WildernessBoundBackport {
         ModItems.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         ModCreativeModeTabs.register(modEventBus);
+
+        ModTrunkPlacerTypes.register(modEventBus);
+        ModFoliagePlacerTypes.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (WildernessBoundBackport) to respond directly to events.

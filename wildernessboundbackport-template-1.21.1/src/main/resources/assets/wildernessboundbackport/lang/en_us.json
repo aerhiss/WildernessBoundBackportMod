@@ -1,6 +1,7 @@
 {
   "creativetab.wildernessboundbackport.wool_stairs_and_slabs": "Wool Slabs & Stairs",
   "creativetab.wildernessboundbackport.concrete_stairs_and_slabs": "Concrete Slabs & Stairs",
+  "creativetab.wildernessboundbackport.polar_wood_set": "Poplar Wood Set",
 
   "tag.wildernessboundbackport.concrete": "Concrete",
   "tag.wildernessboundbackport.concrete_slabs": "Concrete Slabs",
@@ -9,7 +10,6 @@
   "tag.wildernessboundbackport.wool_stairs": "Wool Stairs",
   "tag.wildernessboundbackport.poplar": "Poplar",
   "tag.wildernessboundbackport.poplar_logs": "Poplar Logs",
-
 
   "block.wildernessboundbackport.white_wool_slab": "White Wool Slab",
   "block.wildernessboundbackport.white_wool_stairs": "White Wool Stairs",
@@ -123,5 +123,10 @@
   "block.wildernessboundbackport.poplar_trapdoor" : "Poplar Trapdoor",
   "block.wildernessboundbackport.poplar_door" : "Poplar Door",
   "block.wildernessboundbackport.poplar_fence" : "Poplar Fence",
-  "block.wildernessboundbackport.poplar_fence_gate" : "Poplar Fence Gate"
+  "block.wildernessboundbackport.poplar_fence_gate" : "Poplar Fence Gate",
+
+  "block.wildernessboundbackport.poplar_sapling" : "Poplar Sapling",
+  "block.wildernessboundbackport.red_poplar_leaves" : "Red Poplar Leaves",
+  "block.wildernessboundbackport.orange_poplar_leaves" : "Orange Poplar Leaves",
+  "block.wildernessboundbackport.yellow_poplar_leaves" : "Yellow Poplar Leaves"
 }
