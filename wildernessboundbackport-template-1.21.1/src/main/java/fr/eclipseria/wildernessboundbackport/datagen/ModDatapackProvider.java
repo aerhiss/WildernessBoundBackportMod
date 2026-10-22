@@ -3,6 +3,7 @@ package fr.eclipseria.wildernessboundbackport.datagen;
 
 import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
 import fr.eclipseria.wildernessboundbackport.worldgen.ModBiomeModifiers;
+import fr.eclipseria.wildernessboundbackport.worldgen.ModBiomes;
 import fr.eclipseria.wildernessboundbackport.worldgen.ModConfiguredFeatures;
 import fr.eclipseria.wildernessboundbackport.worldgen.ModPlacedFeatures;
 import net.minecraft.core.HolderLookup;
@@ -19,7 +20,8 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
+            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
+            .add(Registries.BIOME, ModBiomes::bootstrap);
 
     public ModDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(WildernessBoundBackport.MODID));
