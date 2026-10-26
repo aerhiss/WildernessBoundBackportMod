@@ -1,6 +1,5 @@
 package fr.eclipseria.wildernessboundbackport.datagen;
 
-import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -17,7 +16,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 
-@EventBusSubscriber(modid = WildernessBoundBackport.MODID)
+@EventBusSubscriber(modid = "wildernessboundbackport")
 public class DataGenerators {
 
         @SubscribeEvent

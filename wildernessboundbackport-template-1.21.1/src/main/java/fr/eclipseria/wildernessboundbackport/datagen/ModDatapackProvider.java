@@ -3,7 +3,7 @@ package fr.eclipseria.wildernessboundbackport.datagen;
 
 import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
 import fr.eclipseria.wildernessboundbackport.worldgen.ModBiomeModifiers;
-import fr.eclipseria.wildernessboundbackport.worldgen.ModBiomes;
+import fr.eclipseria.wildernessboundbackport.worldgen.biome.ModBiomes;
 import fr.eclipseria.wildernessboundbackport.worldgen.ModConfiguredFeatures;
 import fr.eclipseria.wildernessboundbackport.worldgen.ModPlacedFeatures;
 import net.minecraft.core.HolderLookup;

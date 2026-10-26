@@ -28,6 +28,10 @@ sourceSets.main.resources {
 
 repositories {
     // Add here additional repositories if required by some of the dependencies below.
+    maven {
+        name = "TerraBlender"
+        url = "https://maven.minecraftforge.net/"
+    }
 }
 
 base {
@@ -56,6 +60,10 @@ neoForge {
             client()
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+
+            jvmArgument '-Dneoforge.earlydisplay=false'
+            jvmArgument '-Dfml.earlydisplay=false'
+            jvmArgument '-Dneoforge.earlywindow=false'
         }
 
         server {
@@ -137,6 +145,9 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+    implementation 'com.github.glitchfiend:TerraBlender-neoforge:1.21.1-4.1.0.8'
+    localRuntime 'com.github.glitchfiend:TerraBlender-neoforge:1.21.1-4.1.0.8'
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
