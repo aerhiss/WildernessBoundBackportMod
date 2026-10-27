@@ -3,6 +3,10 @@ package fr.eclipseria.wildernessboundbackport;
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
 import fr.eclipseria.wildernessboundbackport.item.ModCreativeModeTabs;
 import fr.eclipseria.wildernessboundbackport.item.ModItems;
+import fr.eclipseria.wildernessboundbackport.worldgen.biome.ModTerraBlender;
+import fr.eclipseria.wildernessboundbackport.worldgen.biome.surface.ModSurfaceRules;
+import fr.eclipseria.wildernessboundbackport.worldgen.tree.ModFoliagePlacerTypes;
+import fr.eclipseria.wildernessboundbackport.worldgen.tree.ModTrunkPlacerTypes;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -16,6 +20,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(WildernessBoundBackport.MODID)
@@ -38,6 +43,11 @@ public class WildernessBoundBackport {
         // Register the Deferred Register to the mod event bus so tabs get registered
         ModCreativeModeTabs.register(modEventBus);
 
+        ModTrunkPlacerTypes.register(modEventBus);
+        ModFoliagePlacerTypes.register(modEventBus);
+
+        ModTerraBlender.registerBiomes();
+
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (WildernessBoundBackport) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
@@ -51,6 +61,8 @@ public class WildernessBoundBackport {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
+
+        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MODID, ModSurfaceRules.makeRules());
 
     }
 

@@ -1,7 +1,7 @@
 package fr.eclipseria.wildernessboundbackport.datagen;
 
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
-import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
+import fr.eclipseria.wildernessboundbackport.block.register.SlabAndStairs;
 import fr.eclipseria.wildernessboundbackport.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -69,6 +69,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, block.getStair().asItem().asItem(),block.getBlockType().asItem(),1);
             stonecutterResultFromBase(recipeOutput, RecipeCategory.BUILDING_BLOCKS, block.getSlab().asItem(),block.getBlockType().asItem(),2);
         }
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.POPLAR.getPlanks(), 4)
+                .requires(Ingredient.of(ModTags.Items.POPLAR_LOGS))
+                .unlockedBy("has_poplar", has(ModBlocks.POPLAR.getLog()))
+                .save(recipeOutput);
+
+        stairBuilder(ModBlocks.POPLAR.getStair().get(), Ingredient.of(ModBlocks.POPLAR.getPlanks()))
+                .group("poplar")
+                .unlockedBy("has_poplar", has(ModBlocks.POPLAR.getPlanks()))
+                .save(recipeOutput);
+
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.POPLAR.getSlab().get(),ModBlocks.POPLAR.getPlanks().get());
+
+        buttonBuilder(ModBlocks.POPLAR.getButton().get(), Ingredient.of(ModBlocks.POPLAR.getPlanks())).group("poplar")
+                .unlockedBy("has_poplar", has(ModBlocks.POPLAR.getPlanks()))
+                .save(recipeOutput);
+
+        pressurePlate(recipeOutput,ModBlocks.POPLAR.getPressurePlate().get(),ModBlocks.POPLAR.getPlanks().get());
+
+        fenceBuilder(ModBlocks.POPLAR.getFence().get(), Ingredient.of(ModBlocks.POPLAR.getPlanks())).group("poplar")
+                .unlockedBy("has_poplar", has(ModBlocks.POPLAR.getPlanks()))
+                .save(recipeOutput);
+
+        fenceGateBuilder(ModBlocks.POPLAR.getFenceGate().get(), Ingredient.of(ModBlocks.POPLAR.getPlanks())).group("poplar")
+                .unlockedBy("has_poplar", has(ModBlocks.POPLAR.getPlanks()))
+                .save(recipeOutput);
+
+        trapdoorBuilder(ModBlocks.POPLAR.getTrapdoor().get(), Ingredient.of(ModBlocks.POPLAR.getPlanks())).group("poplar")
+                .unlockedBy("has_poplar", has(ModBlocks.POPLAR.getPlanks()))
+                .save(recipeOutput);
+
+        doorBuilder(ModBlocks.POPLAR.getDoor().get(), Ingredient.of(ModBlocks.POPLAR.getPlanks())).group("poplar")
+                .unlockedBy("has_poplar", has(ModBlocks.POPLAR.getPlanks()))
+                .save(recipeOutput);
 
     }
 

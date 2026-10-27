@@ -1,7 +1,8 @@
 package fr.eclipseria.wildernessboundbackport.datagen;
 
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
-import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
+import fr.eclipseria.wildernessboundbackport.block.register.ModWoodSet;
+import fr.eclipseria.wildernessboundbackport.block.register.SlabAndStairs;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -24,6 +25,46 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
             dropSelf(block.getSlab().get());
             dropSelf(block.getStair().get());
         }
+
+        for (ModWoodSet set : ModBlocks.WOODSET){
+            dropSelf(set.getLog().get());
+            dropSelf(set.getStrippedLog().get());
+            dropSelf(set.getWood().get());
+            dropSelf(set.getStrippedWood().get());
+            dropSelf(set.getPlanks().get());
+            dropSelf(set.getStair().get());
+            dropSelf(set.getSlab().get());
+            dropSelf(set.getDoor().get());
+            dropSelf(set.getTrapdoor().get());
+            dropSelf(set.getButton().get());
+            dropSelf(set.getPressurePlate().get());
+            dropSelf(set.getFence().get());
+            dropSelf(set.getFenceGate().get());
+        }
+
+        dropSelf(ModBlocks.POPLAR_SAPLING.get());
+
+        add(ModBlocks.RED_POPLAR_LEAVES.get(), block ->
+                createLeavesDrops(
+                        block,
+                        ModBlocks.POPLAR_SAPLING.get(),
+                        NORMAL_LEAVES_SAPLING_CHANCES
+                )
+        );
+        add(ModBlocks.ORANGE_POPLAR_LEAVES.get(), block ->
+                createLeavesDrops(
+                        block,
+                        ModBlocks.POPLAR_SAPLING.get(),
+                        NORMAL_LEAVES_SAPLING_CHANCES
+                )
+        );
+        add(ModBlocks.YELLOW_POPLAR_LEAVES.get(), block ->
+                createLeavesDrops(
+                        block,
+                        ModBlocks.POPLAR_SAPLING.get(),
+                        NORMAL_LEAVES_SAPLING_CHANCES
+                )
+        );
     }
 
     @Override

@@ -1,9 +1,10 @@
 package fr.eclipseria.wildernessboundbackport.block.custom;
 
+import fr.eclipseria.wildernessboundbackport.block.register.SlabAndStairs;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
-public class FlammableSlabAndStairs extends SlabAndStairs{
+public class FlammableSlabAndStairs extends SlabAndStairs {
 
     public FlammableSlabAndStairs(String name, Block blockType) {
         super(

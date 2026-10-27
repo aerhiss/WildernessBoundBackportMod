@@ -1,4 +1,4 @@
-package fr.eclipseria.wildernessboundbackport.block.custom;
+package fr.eclipseria.wildernessboundbackport.block.register;
 
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
 import net.minecraft.world.level.block.Block;

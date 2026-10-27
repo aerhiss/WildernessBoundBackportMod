@@ -2,7 +2,7 @@ package fr.eclipseria.wildernessboundbackport.item;
 
 import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
-import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
+import fr.eclipseria.wildernessboundbackport.block.register.SlabAndStairs;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -37,6 +37,34 @@ public class ModCreativeModeTabs {
                             output.accept(pair.getStair().get());
                             output.accept(pair.getSlab().get());
                         }
+                    })
+                    .build()
+    );
+
+    public static final Supplier<CreativeModeTab> POPLARSET = CREATIVE_MODE_TAB.register(
+            "poplar_set_tab",
+            () -> CreativeModeTab.builder().icon(ModBlocks.POPLAR.getWood()::toStack)
+                    .title(Component.translatable("creativetab.wildernessboundbackport.polar_wood_set"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModBlocks.POPLAR.getLog().get());
+                        output.accept(ModBlocks.POPLAR.getStrippedLog().get());
+                        output.accept(ModBlocks.POPLAR.getWood().get());
+                        output.accept(ModBlocks.POPLAR.getStrippedWood().get());
+                        output.accept(ModBlocks.POPLAR.getPlanks().get());
+                        output.accept(ModBlocks.POPLAR.getStair().get());
+                        output.accept(ModBlocks.POPLAR.getSlab().get());
+                        output.accept(ModBlocks.POPLAR.getDoor().get());
+                        output.accept(ModBlocks.POPLAR.getTrapdoor().get());
+                        output.accept(ModBlocks.POPLAR.getButton().get());
+                        output.accept(ModBlocks.POPLAR.getPressurePlate().get());
+                        output.accept(ModBlocks.POPLAR.getFence().get());
+                        output.accept(ModBlocks.POPLAR.getFenceGate().get());
+                        output.accept(ModBlocks.RED_POPLAR_LEAVES.get());
+                        output.accept(ModBlocks.ORANGE_POPLAR_LEAVES.get());
+                        output.accept(ModBlocks.YELLOW_POPLAR_LEAVES.get());
+                        output.accept(ModBlocks.POPLAR_SAPLING.get());
+
                     })
                     .build()
     );
