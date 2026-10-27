@@ -1,6 +1,7 @@
-package fr.eclipseria.wildernessboundbackport.block.custom;
+package fr.eclipseria.wildernessboundbackport.block.register;
 
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
+import fr.eclipseria.wildernessboundbackport.block.custom.ModFlammableRotatedPillarBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;

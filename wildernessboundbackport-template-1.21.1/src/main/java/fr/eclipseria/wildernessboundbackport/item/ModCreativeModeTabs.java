@@ -2,7 +2,7 @@ package fr.eclipseria.wildernessboundbackport.item;
 
 import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
-import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
+import fr.eclipseria.wildernessboundbackport.block.register.SlabAndStairs;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

@@ -3,7 +3,7 @@ package fr.eclipseria.wildernessboundbackport.datagen;
 import fr.eclipseria.wildernessboundbackport.WildernessBoundBackport;
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
 import fr.eclipseria.wildernessboundbackport.block.custom.ModLeavesBlock;
-import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
+import fr.eclipseria.wildernessboundbackport.block.register.SlabAndStairs;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;

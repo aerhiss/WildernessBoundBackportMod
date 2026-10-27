@@ -1,8 +1,8 @@
 package fr.eclipseria.wildernessboundbackport.datagen;
 
 import fr.eclipseria.wildernessboundbackport.block.ModBlocks;
-import fr.eclipseria.wildernessboundbackport.block.custom.ModWoodSet;
-import fr.eclipseria.wildernessboundbackport.block.custom.SlabAndStairs;
+import fr.eclipseria.wildernessboundbackport.block.register.ModWoodSet;
+import fr.eclipseria.wildernessboundbackport.block.register.SlabAndStairs;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
